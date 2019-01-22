@@ -12,13 +12,13 @@ function example() {
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
-  let score = 0;
+  let newcount = 0;
   return function counterInner() {
-    return score++;
+    return newcount++;
   };
 };
 
-const newCounter = counter();
+const newcount = counter();
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
